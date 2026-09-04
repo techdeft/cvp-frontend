@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechBroker - Next-Gen Tech Marketplace & Brokerage</title>
+  <meta name="description" content="Discover, trade, and invest in high-performance tech assets with real-time analytics and seamless brokerage." />
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-slate-900 text-slate-100 font-sans antialiased min-h-screen flex flex-col">
+
+  <!-- HEADER / NAVIGATION BAR (Blended with Hero section) -->
+  <header class="sticky top-0 z-50 w-full bg-white text-sm transition-all">
+    <nav class="max-w-[85rem] w-full mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 sm:h-20" aria-label="Global">
+      <div class="flex items-center justify-between w-full sm:w-auto">
+        <!-- Logo -->
+        <a class="flex-none flex items-center gap-2" href="#" aria-label="TechBroker">
+          <img src="/logo.png" alt="TechBroker Logo" class="h-9 w-auto max-h-10 object-contain" />
+        </a>
+        
+        <!-- Mobile Toggle Button -->
+        <div class="sm:hidden">
+          <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-full border border-gray-300 font-medium bg-[#fafbfc] text-gray-800 shadow-xs hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#ff5533] transition-all text-xs" data-hs-collapse="#navbar-collapse" aria-controls="navbar-collapse" aria-label="Toggle navigation">
+            <svg class="hs-collapse-open:hidden flex-shrink-0 w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+            <svg class="hs-collapse-open:block hidden flex-shrink-0 w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Navigation Links Container (Full cover on mobile) -->
+      <div id="navbar-collapse" class="hs-collapse hidden transition-all duration-300 fixed inset-x-0 top-[65px] bottom-0 bg-[#fafbfc] z-50 p-6 overflow-y-auto sm:static sm:block sm:inset-auto sm:bg-transparent sm:p-0 sm:overflow-visible basis-full grow">
+        <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-end sm:ps-5 h-full sm:h-auto">
+          <a class="font-bold text-[#ff5533] focus:outline-none text-base sm:text-sm" href="#" aria-current="page">Home</a>
+          <a class="font-semibold text-gray-900 hover:text-[#ff5533] focus:outline-none transition text-base sm:text-sm" href="#features">Features</a>
+          <a class="font-semibold text-gray-900 hover:text-[#ff5533] focus:outline-none transition text-base sm:text-sm" href="#market">Marketplace</a>
+          <a class="font-semibold text-gray-900 hover:text-[#ff5533] focus:outline-none transition text-base sm:text-sm" href="#faq">FAQ</a>
+          
+          <!-- Dropdown -->
+          <div class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] py-1 sm:py-0">
+            <button id="hs-mega-menu-basic-dr" type="button" class="flex items-center w-full text-gray-900 hover:text-[#ff5533] font-semibold focus:outline-none transition text-base sm:text-sm">
+              Resources
+              <svg class="ms-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+
+            <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 bg-white border border-gray-200 shadow-xl rounded-xl p-2 sm:mt-2" aria-labelledby="hs-mega-menu-basic-dr">
+              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 hover:text-[#ff5533] focus:outline-none" href="#">
+                Documentation
+              </a>
+              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 hover:text-[#ff5533] focus:outline-none" href="#">
+                API Reference
+              </a>
+              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 hover:text-[#ff5533] focus:outline-none" href="#">
+                Community & Forum
+              </a>
+            </div>
+          </div>
+
+          <!-- Buttons (Consistently rounded-full) -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-6 sm:pt-0 border-t border-gray-200 sm:border-t-0 mt-auto sm:mt-0">
+            <a class="py-2.5 px-5 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-gray-300 bg-white text-gray-900 shadow-xs hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#ff5533] transition" href="#">
+              Sign in
+            </a>
+            <a class="py-2.5 px-5 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent bg-[#ff5533] text-white hover:bg-[#e04422] focus:outline-none focus:ring-2 focus:ring-[#ff5533] shadow-md shadow-[#ff5533]/25 transition" href="#">
+              Get Started
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main id="content" class="grow">
+    
+    <!-- HERO SECTION -->
+    <section class="relative bg-[#fafbfc] bg-grid-pattern border-b border-gray-200/80 py-16 sm:py-20 lg:py-24 overflow-hidden">
+      <!-- Decorative Random Floating Tiles (Matching reference background aesthetic) -->
+      <div class="absolute top-12 left-1/4 w-8 h-8 bg-amber-100/50 rounded-sm pointer-events-none"></div>
+      <div class="absolute top-1/3 left-10 w-10 h-10 bg-orange-100/40 rounded-sm pointer-events-none"></div>
+      <div class="absolute bottom-16 left-1/3 w-9 h-9 bg-orange-100/50 rounded-sm pointer-events-none"></div>
+      <div class="absolute top-8 right-1/3 w-10 h-10 bg-amber-100/30 rounded-sm pointer-events-none"></div>
+      <div class="absolute bottom-8 right-12 w-12 h-12 bg-amber-100/40 rounded-sm pointer-events-none"></div>
+      
+      <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- LEFT COLUMN: Content & CTAs -->
+          <div class="lg:col-span-7 text-left">
+            
+            <!-- Headline -->
+            <h1 class="font-urbanist font-bold text-4xl sm:text-5xl lg:text-[64px] text-[#0F172B] leading-[100%] tracking-normal capitalize">
+              Build Trust Instantly.<br />
+              Verify Credentials<br />
+              <span class="">Flawlessly.</span>
+            </h1>
+
+
+
+
+            <!-- Subtitle -->
+            <p class="mt-6 text-lg sm:text-xl text-slate-600 max-w-xl font-normal leading-relaxed">
+              CVP connects institutions and organizations to verify certificates and results, reduce fraud and build trust.
+            </p>
+
+            <!-- CTA Action Buttons (Pill shaped as in reference design) -->
+            <div class="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <!-- Primary CTA -->
+              <a href="#" class="inline-flex justify-center items-center gap-2 text-white font-semibold text-base py-3.5 px-8 rounded-full bg-[#ff5533] hover:bg-[#e04422] shadow-lg shadow-[#ff5533]/30 hover:shadow-xl hover:shadow-[#ff5533]/40 focus:outline-none focus:ring-2 focus:ring-[#ff5533] transition-all transform hover:-translate-y-0.5 group">
+                Get Started
+                <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+
+              <!-- Secondary CTA -->
+              <a href="#how-it-works" class="inline-flex justify-center items-center gap-2 text-slate-800 font-semibold text-base py-3.5 px-8 rounded-full border border-slate-300 bg-white hover:bg-slate-50 hover:border-slate-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-slate-400 transition-all">
+                See how it works
+              </a>
+            </div>
+
+          </div>
+
+          <!-- RIGHT COLUMN: Hero Image (Static, no animation) -->
+          <div class="lg:col-span-5 flex justify-center items-center">
+            <img src="/hero-image.png" alt="Hero Shield Illustration" class="w-[470px] max-w-md sm:max-w-lg lg:max-w-xl h-auto object-contain" />
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUSTED BY LEADING INSTITUTIONS BANNER -->
+    <section class="bg-[#f0f2f7] border-y border-gray-200/90 py-10 overflow-hidden relative">
+      <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 mb-6">
+        <p class="text-center text-xs sm:text-sm font-extrabold text-slate-700 uppercase tracking-widest">
+          Trusted by Leading Institutions
+        </p>
+      </div>
+
+      <!-- Left & Right Fading Gradient Overlays -->
+      <div class="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-[#f0f2f7] to-transparent z-10"></div>
+      <div class="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-32 bg-gradient-to-l from-[#f0f2f7] to-transparent z-10"></div>
+
+      <!-- Marquee Ticker Track -->
+      <div class="flex overflow-hidden">
+        <div class="animate-marquee flex items-center gap-6 sm:gap-10 py-2">
+          
+          <!-- Item 1: University of Lagos -->
+          <div class="flex items-center gap-3 px-5 py-2.5 text-slate-900 font-bold text-sm sm:text-base whitespace-nowrap transition">
+            <img src="/schools/unilag.png" alt="University of Lagos" class="w-[44px] h-[44px] object-contain flex-shrink-0" />
+            <span>University of Lagos</span>
+          </div>
+
+          <!-- Item 2: University of Ilorin -->
+          <div class="flex items-center gap-3 px-5 py-2.5 text-slate-900 font-bold text-sm sm:text-base whitespace-nowrap transition">
+            <img src="/schools/uni-ilorin.png" alt="University of Ilorin" class="w-[44px] h-[44px] object-contain flex-shrink-0" />
+            <span>University of Ilorin</span>
+          </div>
+
+          <!-- Item 3: Lead City University -->
+          <div class="flex items-center gap-3 px-5 py-2.5 text-slate-900 font-bold text-sm sm:text-base whitespace-nowrap transition">
+            <img src="/schools/LCU.png" alt="Lead City University" class="w-[44px] h-[44px] object-contain flex-shrink-0" />
+            <span>Lead City University</span>
+          </div>
+
+          <!-- Item 4: WAEC -->
+          <div class="flex items-center gap-3 px-5 py-2.5 text-slate-900 font-bold text-sm sm:text-base whitespace-nowrap transition">
+            <img src="/schools/waec.png" alt="WAEC" class="w-[44px] h-[44px] object-contain flex-shrink-0" />
+            <span>WAEC</span>
+          </div>
+
+          <!-- Item 5: Obafemi Awolowo University -->
+          <div class="flex items-center gap-3 px-5 py-2.5 text-slate-900 font-bold text-sm sm:text-base whitespace-nowrap transition">
+            <img src="/schools/oau.png" alt="Obafemi Awolowo University" class="w-[44px] h-[44px] object-contain flex-shrink-0" />
+            <span>Obafemi Awolowo University</span>
+          </div>
+
+          <!-- DUPLICATED SET FOR SEAMLESS INFINITE MARQUEE LOOP -->
+
+          <div class="flex items-center gap-3 px-5 py-2.5 text-slate-900 font-bold text-sm sm:text-base whitespace-nowrap transition">
+            <img src="/schools/unilag.png" alt="University of Lagos" class="w-[44px] h-[44px] object-contain flex-shrink-0" />
+            <span>University of Lagos</span>
+          </div>
+
+          <div class="flex items-center gap-3 px-5 py-2.5 text-slate-900 font-bold text-sm sm:text-base whitespace-nowrap transition">
+            <img src="/schools/uni-ilorin.png" alt="University of Ilorin" class="w-[44px] h-[44px] object-contain flex-shrink-0" />
+            <span>University of Ilorin</span>
+          </div>
+
+          <div class="flex items-center gap-3 px-5 py-2.5 text-slate-900 font-bold text-sm sm:text-base whitespace-nowrap transition">
+            <img src="/schools/LCU.png" alt="Lead City University" class="w-[44px] h-[44px] object-contain flex-shrink-0" />
+            <span>Lead City University</span>
+          </div>
+
+          <div class="flex items-center gap-3 px-5 py-2.5 text-slate-900 font-bold text-sm sm:text-base whitespace-nowrap transition">
+            <img src="/schools/waec.png" alt="WAEC" class="w-[44px] h-[44px] object-contain flex-shrink-0" />
+            <span>WAEC</span>
+          </div>
+
+          <div class="flex items-center gap-3 px-5 py-2.5 text-slate-900 font-bold text-sm sm:text-base whitespace-nowrap transition">
+            <img src="/schools/oau.png" alt="Obafemi Awolowo University" class="w-[44px] h-[44px] object-contain flex-shrink-0" />
+            <span>Obafemi Awolowo University</span>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="relative bg-[#fafbfc] bg-grid-pattern py-20 lg:py-28 overflow-hidden border-b border-gray-200/80">
+      <!-- Decorative Random Floating Tiles -->
+      <div class="absolute top-16 left-1/3 w-9 h-9 bg-amber-100/40 rounded-sm pointer-events-none"></div>
+      <div class="absolute bottom-12 left-1/4 w-10 h-10 bg-orange-100/30 rounded-sm pointer-events-none"></div>
+      <div class="absolute top-10 right-1/4 w-8 h-8 bg-amber-100/30 rounded-sm pointer-events-none"></div>
+      <div class="absolute bottom-8 right-1/3 w-11 h-11 bg-orange-100/40 rounded-sm pointer-events-none"></div>
+
+      <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- LEFT COLUMN: Content -->
+          <div class="lg:col-span-7 text-left">
+            <span class="text-[#ff5533] font-semibold text-base sm:text-lg tracking-wide block mb-3">
+              About C.V.P
+            </span>
+
+            <h2 class="font-urbanist font-normal text-3xl sm:text-5xl lg:text-[64px] text-[#0F172B] leading-[100%] tracking-normal mb-6">
+              A new standard for<br />credential trust.
+            </h2>
+
+
+            <div class="space-y-4 text-slate-600 text-base sm:text-lg leading-relaxed max-w-xl">
+              <p>
+                The Central Verification Portal is a modern digital platform designed to simplify and secure the verification of academic and professional credentials.
+              </p>
+              <p>
+                Connect with institutions and organizations to reduce fraud, build trust, and deliver validations with absolute confidence.
+              </p>
+            </div>
+
+            <div class="mt-8">
+              <a href="#manifesto" class="inline-flex justify-center items-center gap-2 text-slate-800 font-semibold text-base py-3.5 px-8 rounded-full border border-slate-300 bg-white hover:bg-slate-50 hover:border-slate-400 shadow-xs focus:outline-none focus:ring-2 focus:ring-slate-400 transition-all">
+                Read Our Manifesto
+              </a>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN: Image with unique diagonal rounded corners -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative overflow-hidden">
+              <img src="/images/about-image.png" alt="Handshake representing credential trust" class="w-full h-auto max-w-md lg:max-w-none object-cover transform hover:scale-105 transition-transform duration-500" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+      
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="mt-auto bg-slate-950 border-t border-slate-800/80">
+    <div class="max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center justify-center w-6 h-6 rounded bg-indigo-600 text-white font-bold text-xs">T</span>
+        <span class="text-sm font-semibold text-slate-300">TechBroker &copy; 2026</span>
+      </div>
+      <p class="text-xs text-slate-500">Built with HTML5, Tailwind CSS v3, and Preline UI.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
