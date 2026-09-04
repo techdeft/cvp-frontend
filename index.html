@@ -587,63 +587,90 @@
             </svg>
           </button>
 
-          <!-- Track Mask -->
-          <div class="overflow-hidden rounded-[20px] sm:rounded-[24px] shadow-[0_20px_50px_rgba(15,23,42,0.08)] bg-white border border-slate-100/80">
+          <!-- Track Mask (With top headroom for protruding image) -->
+          <div class="overflow-hidden pt-16 pb-4 -mt-16">
             
             <!-- Sliding Track Container -->
             <div id="testimonial-track" class="flex transition-transform duration-500 ease-in-out w-full">
               
               <!-- SLIDE 1 -->
-              <div class="w-full flex-shrink-0 flex flex-col md:flex-row items-stretch min-h-[360px] sm:min-h-[400px]">
-                <div class="w-full md:w-5/12 min-h-[280px] sm:min-h-[360px] relative overflow-hidden bg-slate-100">
-                  <img src="images/testimonial-sarah.png" alt="Dr. Sarah Jenkins" class="w-full h-full object-cover object-top" />
-                </div>
-                <div class="w-full md:w-7/12 p-8 sm:p-10 lg:p-12 flex flex-col justify-center text-left bg-white">
-                  <h3 class="font-urbanist font-normal text-2xl sm:text-3xl lg:text-[36px] text-[#0F172B] leading-tight mb-1">
-                    Dr. Sarah Jenkins
-                  </h3>
-                  <p class="font-sans font-light text-sm sm:text-base text-slate-400 mb-6">
-                    Registrar, Global Tech University
-                  </p>
-                  <blockquote class="font-sans font-light text-base sm:text-lg text-slate-600 leading-relaxed">
-                    &ldquo;CVP has completely transformed how we handle verification requests. What used to take our admin team weeks is now fully automated and secure. The automated evidence collection alone saved us hundreds of administrative hours.&rdquo;
-                  </blockquote>
+              <div class="w-full flex-shrink-0 px-2 sm:px-4">
+                <div class="bg-white rounded-[20px] sm:rounded-[24px] shadow-[0_20px_50px_rgba(15,23,42,0.06)] border border-slate-100/80 flex flex-col md:flex-row items-stretch mt-12 sm:mt-16">
+                  
+                  <!-- Left Image (Shoots out of the card on top) -->
+                  <div class="w-full md:w-5/12 -mt-12 sm:-mt-16 relative z-10 flex-shrink-0">
+                    <div class="w-full h-[320px] sm:h-[380px] lg:h-[420px] rounded-[16px] sm:rounded-[20px] overflow-hidden bg-[#E7E9EC] shadow-md md:shadow-none">
+                      <img src="images/testimonial-sarah.png" alt="Dr. Sarah Jenkins" class="w-full h-full object-cover object-top" />
+                    </div>
+                  </div>
+
+                  <!-- Right Content Column inside white card -->
+                  <div class="w-full md:w-7/12 p-8 sm:p-10 lg:p-12 flex flex-col justify-center text-left bg-white rounded-b-[20px] md:rounded-r-[24px] md:rounded-bl-none">
+                    <h3 class="font-urbanist font-normal text-2xl sm:text-3xl lg:text-[36px] text-[#0F172B] leading-tight mb-1">
+                      Dr. Sarah Jenkins
+                    </h3>
+                    <p class="font-sans font-light text-sm sm:text-base text-slate-400 mb-6">
+                      Registrar, Global Tech University
+                    </p>
+                    <blockquote class="font-sans font-light text-base sm:text-lg text-slate-600 leading-relaxed">
+                      &ldquo;CVP has completely transformed how we handle verification requests. What used to take our admin team weeks is now fully automated and secure. The automated evidence collection alone saved us hundreds of administrative hours.&rdquo;
+                    </blockquote>
+                  </div>
+
                 </div>
               </div>
 
               <!-- SLIDE 2 -->
-              <div class="w-full flex-shrink-0 flex flex-col md:flex-row items-stretch min-h-[360px] sm:min-h-[400px]">
-                <div class="w-full md:w-5/12 min-h-[280px] sm:min-h-[360px] relative overflow-hidden bg-slate-100">
-                  <img src="images/testimonial-marcus.png" alt="Marcus Vance" class="w-full h-full object-cover object-top" />
-                </div>
-                <div class="w-full md:w-7/12 p-8 sm:p-10 lg:p-12 flex flex-col justify-center text-left bg-white">
-                  <h3 class="font-urbanist font-normal text-2xl sm:text-3xl lg:text-[36px] text-[#0F172B] leading-tight mb-1">
-                    Marcus Vance
-                  </h3>
-                  <p class="font-sans font-light text-sm sm:text-base text-slate-400 mb-6">
-                    Head of HR Compliance, Nexus Financial
-                  </p>
-                  <blockquote class="font-sans font-light text-base sm:text-lg text-slate-600 leading-relaxed">
-                    &ldquo;Instant credential verification has streamlined our hiring pipeline dramatically. We verify international transcripts in seconds without manual follow-up calls or document forgery risks.&rdquo;
-                  </blockquote>
+              <div class="w-full flex-shrink-0 px-2 sm:px-4">
+                <div class="bg-white rounded-[20px] sm:rounded-[24px] shadow-[0_20px_50px_rgba(15,23,42,0.06)] border border-slate-100/80 flex flex-col md:flex-row items-stretch mt-12 sm:mt-16">
+                  
+                  <!-- Left Image (Shoots out of the card on top) -->
+                  <div class="w-full md:w-5/12 -mt-12 sm:-mt-16 relative z-10 flex-shrink-0">
+                    <div class="w-full h-[320px] sm:h-[380px] lg:h-[420px] rounded-[16px] sm:rounded-[20px] overflow-hidden bg-[#E7E9EC] shadow-md md:shadow-none">
+                      <img src="images/testimonial-marcus.png" alt="Marcus Vance" class="w-full h-full object-cover object-top" />
+                    </div>
+                  </div>
+
+                  <!-- Right Content Column inside white card -->
+                  <div class="w-full md:w-7/12 p-8 sm:p-10 lg:p-12 flex flex-col justify-center text-left bg-white rounded-b-[20px] md:rounded-r-[24px] md:rounded-bl-none">
+                    <h3 class="font-urbanist font-normal text-2xl sm:text-3xl lg:text-[36px] text-[#0F172B] leading-tight mb-1">
+                      Marcus Vance
+                    </h3>
+                    <p class="font-sans font-light text-sm sm:text-base text-slate-400 mb-6">
+                      Head of HR Compliance, Nexus Financial
+                    </p>
+                    <blockquote class="font-sans font-light text-base sm:text-lg text-slate-600 leading-relaxed">
+                      &ldquo;Instant credential verification has streamlined our hiring pipeline dramatically. We verify international transcripts in seconds without manual follow-up calls or document forgery risks.&rdquo;
+                    </blockquote>
+                  </div>
+
                 </div>
               </div>
 
               <!-- SLIDE 3 -->
-              <div class="w-full flex-shrink-0 flex flex-col md:flex-row items-stretch min-h-[360px] sm:min-h-[400px]">
-                <div class="w-full md:w-5/12 min-h-[280px] sm:min-h-[360px] relative overflow-hidden bg-slate-100">
-                  <img src="images/testimonial-elena.png" alt="Elena Rostova" class="w-full h-full object-cover object-top" />
-                </div>
-                <div class="w-full md:w-7/12 p-8 sm:p-10 lg:p-12 flex flex-col justify-center text-left bg-white">
-                  <h3 class="font-urbanist font-normal text-2xl sm:text-3xl lg:text-[36px] text-[#0F172B] leading-tight mb-1">
-                    Elena Rostova
-                  </h3>
-                  <p class="font-sans font-light text-sm sm:text-base text-slate-400 mb-6">
-                    Director of Academic Records, Horizon Institute
-                  </p>
-                  <blockquote class="font-sans font-light text-base sm:text-lg text-slate-600 leading-relaxed">
-                    &ldquo;The tamper-proof audit trail gives our board total confidence. Integrating CVP's API with our internal portal took less than a day, and student feedback has been overwhelmingly positive.&rdquo;
-                  </blockquote>
+              <div class="w-full flex-shrink-0 px-2 sm:px-4">
+                <div class="bg-white rounded-[20px] sm:rounded-[24px] shadow-[0_20px_50px_rgba(15,23,42,0.06)] border border-slate-100/80 flex flex-col md:flex-row items-stretch mt-12 sm:mt-16">
+                  
+                  <!-- Left Image (Shoots out of the card on top) -->
+                  <div class="w-full md:w-5/12 -mt-12 sm:-mt-16 relative z-10 flex-shrink-0">
+                    <div class="w-full h-[320px] sm:h-[380px] lg:h-[420px] rounded-[16px] sm:rounded-[20px] overflow-hidden bg-[#E7E9EC] shadow-md md:shadow-none">
+                      <img src="images/testimonial-elena.png" alt="Elena Rostova" class="w-full h-full object-cover object-top" />
+                    </div>
+                  </div>
+
+                  <!-- Right Content Column inside white card -->
+                  <div class="w-full md:w-7/12 p-8 sm:p-10 lg:p-12 flex flex-col justify-center text-left bg-white rounded-b-[20px] md:rounded-r-[24px] md:rounded-bl-none">
+                    <h3 class="font-urbanist font-normal text-2xl sm:text-3xl lg:text-[36px] text-[#0F172B] leading-tight mb-1">
+                      Elena Rostova
+                    </h3>
+                    <p class="font-sans font-light text-sm sm:text-base text-slate-400 mb-6">
+                      Director of Academic Records, Horizon Institute
+                    </p>
+                    <blockquote class="font-sans font-light text-base sm:text-lg text-slate-600 leading-relaxed">
+                      &ldquo;The tamper-proof audit trail gives our board total confidence. Integrating CVP's API with our internal portal took less than a day, and student feedback has been overwhelmingly positive.&rdquo;
+                    </blockquote>
+                  </div>
+
                 </div>
               </div>
 
