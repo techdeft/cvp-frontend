@@ -233,7 +233,7 @@
             </span>
 
             <h2 data-reveal="slide-up" data-reveal-delay="100" class="font-urbanist font-normal text-2xl sm:text-5xl lg:text-[64px] text-[#0F172B] leading-[100%] tracking-normal mb-6">
-              One portal<br />Every institution. Zero travel.
+              One portal<br />Every institution.
             </h2>
 
 
@@ -509,7 +509,7 @@
           </span>
 
           <h2 data-reveal="slide-up" data-reveal-delay="120" class="font-urbanist font-normal text-3xl sm:text-5xl lg:text-[64px] text-[#0F172B] leading-[115%] tracking-normal text-center mb-6">
-            Everything you need to<br />verify credentials without leaving your desk.
+            Everything you need to<br />verify credentials.
           </h2>
 
           <p data-reveal="slide-up" data-reveal-delay="240" class="font-sans font-normal text-lg sm:text-2xl lg:text-[28px] text-slate-600 leading-[125%] tracking-normal text-center max-w-3xl mx-auto">
@@ -937,27 +937,10 @@
         <!-- Accordion Items List -->
         <div class="max-w-3xl mx-auto space-y-4">
           
-          <!-- ITEM 1 -->
-          <div data-reveal="slide-up-sm" data-reveal-delay="100" class="faq-card transition-all rounded-[16px] bg-[#EEEEF7] border border-transparent p-5 sm:p-6 shadow-xs">
+          <!-- ITEM 1 (ACTIVE BY DEFAULT) -->
+          <div data-reveal="slide-up-sm" data-reveal-delay="100" class="faq-card active rounded-[16px] bg-white border border-[#ff5533]/40 p-5 sm:p-6 shadow-md shadow-slate-200/50">
             <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 text-left font-urbanist font-semibold text-lg sm:text-xl text-[#0F172B] focus:outline-none cursor-pointer">
               <span>How long does verification take?</span>
-              <svg class="faq-icon w-5 h-5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
-              </svg>
-            </button>
-            <div class="faq-body-wrap">
-              <div class="faq-body-inner">
-                <div class="faq-body-content">
-                  Automated digital verification checks are completed in real time (under 5 seconds). For legacy physical records requiring manual registrar verification, status updates keep you informed at every step.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- ITEM 2 (ACTIVE BY DEFAULT) -->
-          <div data-reveal="slide-up-sm" data-reveal-delay="200" class="faq-card active rounded-[16px] bg-white border border-[#ff5533]/40 p-5 sm:p-6 shadow-md shadow-slate-200/50">
-            <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 text-left font-urbanist font-semibold text-lg sm:text-xl text-[#0F172B] focus:outline-none cursor-pointer">
-              <span>Is the data secure?</span>
               <svg class="faq-icon w-5 h-5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
               </svg>
@@ -965,16 +948,16 @@
             <div class="faq-body-wrap open">
               <div class="faq-body-inner">
                 <div class="faq-body-content">
-                  Yes. CVP uses bank-level encryption (AES-256) for data at rest and in transit. We maintain full GDPR and SOC2 compliance.
+                  Most digital checks are completed the same day. For records that need manual registrar sign-off, we guarantee a result within 3 business days — with status updates throughout, so you always know where things stand.
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- ITEM 3 -->
-          <div data-reveal="slide-up-sm" data-reveal-delay="300" class="faq-card rounded-[16px] bg-[#EEEEF7] border border-transparent p-5 sm:p-6 shadow-xs">
+          <!-- ITEM 2 -->
+          <div data-reveal="slide-up-sm" data-reveal-delay="180" class="faq-card rounded-[16px] bg-[#EEEEF7] border border-transparent p-5 sm:p-6 shadow-xs">
             <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 text-left font-urbanist font-semibold text-lg sm:text-xl text-[#0F172B] focus:outline-none cursor-pointer">
-              <span>Can we integrate CVP with our HR system?</span>
+              <span>Do I need to visit the institution or issuing body?</span>
               <svg class="faq-icon w-5 h-5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
               </svg>
@@ -982,14 +965,48 @@
             <div class="faq-body-wrap">
               <div class="faq-body-inner">
                 <div class="faq-body-content">
-                  Yes. CVP provides developer-friendly REST APIs and Webhooks that integrate seamlessly into enterprise ATS, HRIS, and background check platforms.
+                  No. That's the point of CVP — every verification happens through the portal. You never need to travel to a campus or mail a physical request.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 3 -->
+          <div data-reveal="slide-up-sm" data-reveal-delay="260" class="faq-card rounded-[16px] bg-[#EEEEF7] border border-transparent p-5 sm:p-6 shadow-xs">
+            <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 text-left font-urbanist font-semibold text-lg sm:text-xl text-[#0F172B] focus:outline-none cursor-pointer">
+              <span>Can I verify certificates from multiple schools in one place?</span>
+              <svg class="faq-icon w-5 h-5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+              </svg>
+            </button>
+            <div class="faq-body-wrap">
+              <div class="faq-body-inner">
+                <div class="faq-body-content">
+                  Yes. CVP connects you to 450+ institutions and exam bodies, including WAEC and NECO, from a single dashboard — no separate accounts or processes per school.
                 </div>
               </div>
             </div>
           </div>
 
           <!-- ITEM 4 -->
-          <div data-reveal="slide-up-sm" data-reveal-delay="400" class="faq-card rounded-[16px] bg-[#EEEEF7] border border-transparent p-5 sm:p-6 shadow-xs">
+          <div data-reveal="slide-up-sm" data-reveal-delay="340" class="faq-card rounded-[16px] bg-[#EEEEF7] border border-transparent p-5 sm:p-6 shadow-xs">
+            <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 text-left font-urbanist font-semibold text-lg sm:text-xl text-[#0F172B] focus:outline-none cursor-pointer">
+              <span>Can we integrate CVP with our HR or admissions system?</span>
+              <svg class="faq-icon w-5 h-5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+              </svg>
+            </button>
+            <div class="faq-body-wrap">
+              <div class="faq-body-inner">
+                <div class="faq-body-content">
+                  Yes. CVP provides REST APIs and webhooks that plug into ATS, HRIS, and school admission systems — including a dedicated API for O-level verification during the admission process.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 5 -->
+          <div data-reveal="slide-up-sm" data-reveal-delay="420" class="faq-card rounded-[16px] bg-[#EEEEF7] border border-transparent p-5 sm:p-6 shadow-xs">
             <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 text-left font-urbanist font-semibold text-lg sm:text-xl text-[#0F172B] focus:outline-none cursor-pointer">
               <span>How does batch verification work?</span>
               <svg class="faq-icon w-5 h-5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
@@ -999,7 +1016,24 @@
             <div class="faq-body-wrap">
               <div class="faq-body-inner">
                 <div class="faq-body-content">
-                  Upload CSV/Excel manifests or connect via API to verify thousands of student transcripts or employee credentials in a single automated job with instant status callbacks.
+                  Upload a CSV/Excel list or connect via API to verify hundreds or thousands of certificates in a single job, with status callbacks as each one clears.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 6 -->
+          <div data-reveal="slide-up-sm" data-reveal-delay="500" class="faq-card rounded-[16px] bg-[#EEEEF7] border border-transparent p-5 sm:p-6 shadow-xs">
+            <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 text-left font-urbanist font-semibold text-lg sm:text-xl text-[#0F172B] focus:outline-none cursor-pointer">
+              <span>Is the data secure?</span>
+              <svg class="faq-icon w-5 h-5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+              </svg>
+            </button>
+            <div class="faq-body-wrap">
+              <div class="faq-body-inner">
+                <div class="faq-body-content">
+                  Yes — every check runs on bank-level encryption with a tamper-evident audit trail, so your records hold up to scrutiny without adding extra steps for you.
                 </div>
               </div>
             </div>
