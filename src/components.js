@@ -17,7 +17,7 @@ export function renderHeader(containerId = 'site-header') {
 
   container.innerHTML = `
     <header class="sticky top-0 z-50 w-full max-w-full bg-white/95 backdrop-blur-md text-sm transition-all overflow-x-hidden border-b border-slate-200/80">
-      <nav class="max-w-[85rem] w-full max-w-full mx-auto px-5 sm:px-6 lg:px-8 flex items-center justify-between h-16 sm:h-20" aria-label="Global">
+      <nav class="max-w-[85rem] w-full max-w-full mx-auto px-5 sm:px-8 lg:px-12 xl:px-16 flex items-center justify-between h-16 sm:h-20" aria-label="Global">
         <div class="flex items-center justify-between w-full max-w-full sm:w-auto px-2 sm:px-0">
           <!-- Logo -->
           <a class="flex-none flex items-center gap-2" href="/" aria-label="TechBroker">
@@ -81,7 +81,7 @@ export function renderFooter(containerId = 'site-footer') {
 
   container.innerHTML = `
     <footer class="bg-[#fafbfc] text-slate-800 border-t border-slate-200 mt-auto">
-      <div class="max-w-[85rem] mx-auto px-5 sm:px-6 lg:px-8 py-12 lg:py-16">
+      <div class="max-w-[85rem] mx-auto px-5 sm:px-8 lg:px-12 xl:px-16 py-12 lg:py-16">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-slate-200">
           
           <!-- Brand & Description -->
