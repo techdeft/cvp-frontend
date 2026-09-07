@@ -16,7 +16,7 @@ export function renderHeader(containerId = 'site-header') {
   const homeAria = isHomePage ? 'aria-current="page"' : '';
 
   container.innerHTML = `
-    <header class="sticky top-0 z-50 w-full max-w-full bg-white/95 backdrop-blur-md text-sm transition-all overflow-x-hidden border-b border-slate-200/80">
+    <header class="sticky top-0 z-50 w-full max-w-full bg-white backdrop-blur-md text-sm transition-all overflow-x-hidden border-b border-slate-200/80">
       <nav class="max-w-[85rem] w-full max-w-full mx-auto px-5 sm:px-8 lg:px-12 xl:px-16 flex items-center justify-between h-16 sm:h-20" aria-label="Global">
         <div class="flex items-center justify-between w-full max-w-full sm:w-auto px-2 sm:px-0">
           <!-- Logo -->
