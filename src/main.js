@@ -1,8 +1,12 @@
 import './style.css';
 import 'preline/preline';
+import { renderHeader, renderFooter } from './components.js';
 
-// Ensure Preline components auto-init on initial DOM load
+// Auto-render reusable components & auto-init
 document.addEventListener('DOMContentLoaded', () => {
+  renderHeader('site-header');
+  renderFooter('site-footer');
+
   if (window.HSStaticMethods) {
     window.HSStaticMethods.autoInit();
   }
