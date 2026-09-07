@@ -21,7 +21,7 @@ export function renderHeader(containerId = 'site-header') {
         <div class="flex items-center justify-between w-full max-w-full sm:w-auto px-2 sm:px-0">
           <!-- Logo -->
           <a class="flex-none flex items-center gap-2" href="/" aria-label="TechBroker">
-            <img src="/logo.png" alt="TechBroker Logo" class="h-9 w-auto max-h-10 object-contain" />
+            <img src="/images/logo.png" alt="TechBroker Logo" class="h-9 w-auto max-h-10 object-contain" />
           </a>
           
           <!-- Mobile Toggle Button -->
@@ -87,7 +87,7 @@ export function renderFooter(containerId = 'site-footer') {
           <!-- Brand & Description -->
           <div class="md:col-span-6 lg:col-span-5 space-y-4">
             <a class="flex items-center gap-2" href="/" aria-label="TechBroker">
-              <img src="/logo.png" alt="TechBroker Logo" class="h-9 w-auto max-h-10 object-contain" />
+              <img src="/images/logo.png" alt="TechBroker Logo" class="h-9 w-auto max-h-10 object-contain" />
             </a>
             <p class="text-slate-600 text-sm leading-relaxed max-w-sm">
               Central Verification Portal (CVP) — Standardized, automated credential verification platform for institutions, employers, and individuals.
